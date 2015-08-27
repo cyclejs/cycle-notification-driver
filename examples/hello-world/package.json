@@ -5,8 +5,8 @@
   "author": "Brandon Smith",
   "license": "MIT",
   "dependencies": {
-    "@cycle/core": "2.0.x",
-    "@cycle/dom": "4.0.x",
+    "@cycle/core": "3.1.x",
+    "@cycle/dom": "5.0.x",
     "cycle-notification-driver": "0.0.x"
   },
   "devDependencies": {
