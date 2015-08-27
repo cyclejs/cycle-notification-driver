@@ -1,0 +1,40 @@
+{
+  "name": "cycle-notification-driver",
+  "version": "0.0.1",
+  "description": "Cycle.js driver for HTML5 Notifications",
+  "main": "lib/index.js",
+  "author": "Brandon Smith <brandon@16cards.com> (http://16cards.com/)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrandonSmith/cycle-notification-driver.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BrandonSmith/cycle-notification-driver/issues"
+  },
+  "homepage": "https://github.com/BrandonSmith/cycle-notification-driver#readme",
+  "keywords": [
+    "cyclejs",
+    "driver",
+    "notification"
+  ],
+  "peerDependencies": {
+    "@cycle/core": "3.x.x"
+  },
+  "devDependencies": {
+    "@cycle/core": "3.x.x",
+    "babel": "~5.8.21",
+    "babelify": "~6.2.0",
+    "chai": "~3.2.0",
+    "eslint": "~1.0.0",
+    "eslint-config-cycle": "3.x.x",
+    "eslint-plugin-cycle": "~1.0.1",
+    "markdox": "~0.1.9",
+    "mocha": "~2.2.5",
+    "uglify-js": "~2.4.23",
+    "zuul": "~3.3.0"
+  },
+  "scripts": {
+    "docs": "node ./scripts/make-api-docs.js"
+  }
+}
