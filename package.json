@@ -1,8 +1,8 @@
 {
   "name": "cycle-notification-driver",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Cycle.js driver for HTML5 Notifications",
-  "main": "lib/index.js",
+  "main": "src/index.js",
   "author": "Brandon Smith <brandon@16cards.com> (http://16cards.com/)",
   "license": "MIT",
   "repository": {
@@ -25,16 +25,25 @@
     "@cycle/core": "3.x.x",
     "babel": "~5.8.21",
     "babelify": "~6.2.0",
-    "chai": "~3.2.0",
-    "eslint": "~1.0.0",
+    "browserify": "~11.0.1",
+    "eslint": "1.0.x",
     "eslint-config-cycle": "3.x.x",
     "eslint-plugin-cycle": "~1.0.1",
     "markdox": "~0.1.9",
     "mocha": "~2.2.5",
-    "uglify-js": "~2.4.23",
-    "zuul": "~3.3.0"
+    "uglify-js": "~2.4.23"
   },
   "scripts": {
-    "docs": "node ./scripts/make-api-docs.js"
+    "test": "mocha --compilers js:babel/register test",
+    "browserify": "browserify src/index.js -t babelify --standalone CycleNotificationDriver --outfile dist/cycle-notification-driver.js",
+    "uglify": "uglifyjs dist/cycle-notification-driver.js -o dist/cycle-notification-driver.min.js",
+    "precompile-lib": "rm -rf lib/ && mkdir -p lib",
+    "compile-lib": "babel -d lib/ src/",
+    "docs": "node ./scripts/make-api-docs.js",
+    "prepublish": "npm run compile-lib",
+    "release": "npm run release-patch",
+    "release-patch": "git checkout master && npm run dist; git commit -a -m 'Build dist/'; npm version patch && git push origin master --tags",
+    "release-minor": "git checkout master && npm run dist; git commit -a -m 'Build dist/'; npm version minor && git push origin master --tags",
+    "release-major": "git checkout master && npm run dist; git commit -a -m 'Build dist/'; npm version major && git push origin master --tags"
   }
 }
