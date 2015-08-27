@@ -19,7 +19,7 @@ export function makeNotificationDriver() {
             events$$.onError( { type: 'unsupported' } )
         } else if (Notification.permission === 'granted') {
             doShow()
-        } else if (Notification.permission === 'denied') {
+        } else {
             Notification.requestPermission( (permission) => {
                 permission === 'granted'
                     ? doShow()
