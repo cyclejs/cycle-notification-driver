@@ -10976,7 +10976,7 @@ var Rx = _cycleCore2['default'].Rx;
 function main(_ref) {
     var notification = _ref.notification;
 
-    var notifications$ = Rx.Observable.interval(20000).startWith(-1).map(function (value) {
+    var notifications$ = Rx.Observable.interval(10000).startWith(-1).map(function (value) {
         return {
             title: 'Test Notification',
             body: 'Interval ' + value,
@@ -10992,7 +10992,7 @@ function main(_ref) {
 
     all$['do'](function (args) {
         return console.log(args);
-    });
+    }).subscribe();
 
     return {
         notification: notifications$

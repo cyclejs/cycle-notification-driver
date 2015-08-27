@@ -46,7 +46,7 @@ function main({notification}) {
         close$ = notification.get('close'),
         all$ = Rx.Observable.merge(show$, click$, error$, close$)
 
-    all$.do(args => console.log(args))
+    all$.do(args => console.log(args)).subscribe()
 
     return {
         notification: notifications$
