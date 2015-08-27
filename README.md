@@ -12,7 +12,7 @@ Basics:
 
 ```js
 import Cycle from '@cycle/core';
-import { makeNotificationDriver } from 'cycle-notification-driver';
+import { makeNotificationDriver } from 'cycle-notification-driver'
 
 function main({notification}) {
   // ...
@@ -22,7 +22,7 @@ const drivers = {
   notification: makeNotificationDriver()
 }
 
-Cycle.run(main, drivers);
+Cycle.run(main, drivers)
 ```
 
 Simple and normal use case:
