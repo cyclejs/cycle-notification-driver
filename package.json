@@ -2,7 +2,7 @@
   "name": "cycle-notification-driver",
   "version": "0.0.6",
   "description": "Cycle.js driver for HTML5 Notifications",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "author": "Brandon Smith <brandon@16cards.com> (http://16cards.com/)",
   "license": "MIT",
   "repository": {
