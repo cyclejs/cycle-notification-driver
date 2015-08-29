@@ -3,7 +3,7 @@
 A [Cycle.js](http://cycle.js.org) [Driver](http://cycle.js.org/drivers.html) for showing and responding to HTML5 Notifications.
 
 ```
-npm install BrandonSmith/cycle-notification-driver
+npm install @cycle/notification
 ```
 
 ## Usage
