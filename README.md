@@ -12,7 +12,7 @@ Basics:
 
 ```js
 import Cycle from '@cycle/core';
-import { makeNotificationDriver } from 'cycle-notification-driver'
+import { makeNotificationDriver } from '@cycle/notification'
 
 function main({notification}) {
   // ...
