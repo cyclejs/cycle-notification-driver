@@ -1,5 +1,5 @@
 
-let {makeNotificationDriver } = require('./notification-driver')
+let {makeNotificationDriver} = require(`./notification-driver`)
 
 module.exports = {
     /**
@@ -30,5 +30,5 @@ module.exports = {
      * @return {Function} the Notification Driver function
      * @function makeNotificationDriver
      */
-    makeNotificationDriver,
+  makeNotificationDriver,
 }
