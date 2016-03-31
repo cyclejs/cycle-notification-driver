@@ -7,12 +7,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BrandonSmith/cycle-notification-driver.git"
+    "url": "git+https://github.com/cyclejs/cycle-notification-driver.git"
   },
   "bugs": {
-    "url": "https://github.com/BrandonSmith/cycle-notification-driver/issues"
+    "url": "https://github.com/cyclejs/cycle-notification-driver/issues"
   },
-  "homepage": "https://github.com/BrandonSmith/cycle-notification-driver#readme",
+  "homepage": "https://github.com/cyclejs/cycle-notification-driver#readme",
   "keywords": [
     "cyclejs",
     "driver",
