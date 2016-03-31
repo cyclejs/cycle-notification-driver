@@ -1,7 +1,7 @@
 import Cycle from '@cycle/core'
-import { makeNotificationDriver } from 'cycle-notification-driver'
+import Rx from 'rx'
 
-let { Rx } = Cycle
+import { makeNotificationDriver } from '../../../lib'
 
 function main({notification}) {
 
